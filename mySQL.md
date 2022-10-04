@@ -73,9 +73,13 @@ At this point (when you exit the MySQL terminal into bash shell), you can use th
 
 ## Conclusion
 
-I hope this steps have helped you to finally resolve the error you were facing in order to set up your MuSQL server. As you've seen, the solution highlighted what to do prior touching the security, how to run the script, and how to return it to default setting. With these, you can move past the hurdle and move on to the other configurations on the server.
+I hope this steps have helped you to finally resolve the error you were facing in order to set up your MuSQL server. As you've seen, the solution highlighted what to do prior running the security script, how to run the script, and how to return it to the default setting. 
 
-Thank you.
+When you return to the default setting that allows you to use the `sudo mysql` command, it may raise some security concerns, however, it makes the server more secure because random persons cannot log into the server. Only users with sudo privileges can gain access into it that way. 
+
+With these steps in place, you can move past the hurdle and onto the other configurations on the server.
+
+
 
 
 
