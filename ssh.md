@@ -4,7 +4,7 @@ Are you trying to set up an ssh connection with a remote computer and when you t
 
 If you are not sure of what I mean, the following image shows the error I am talking about.
 
-![ssh-copy-error](../images/ssh-error.png "ssh-copy-error")
+![ssh-copy-error](images/ssh-error.png "ssh-copy-error")
 
 <br>
 
@@ -25,7 +25,7 @@ If you are not sure of what I mean, the following image shows the error I am tal
 
 1. On your second machine, Switch to your root user with `sudo su` command and create a new user with the `adduser username` command, in this example, my username is funmilayo.
 
-![adduser-command](../images/adduser.png "adduser-command")
+![adduser-command](images/adduser.png "adduser-command")
 <br>
 
 2. After creating the user, switch into the new user's account with the `su username` command and change into the user's home directory with the `cd ~` command.
@@ -36,7 +36,7 @@ If you are not sure of what I mean, the following image shows the error I am tal
 ```
 mkdir .ssh
 ```
-![.ssh-directory](../images/ssh-directory.png ".ssh-directory")
+![.ssh-directory](images/ssh-directory.png ".ssh-directory")
 
 Note that there was no `.ssh` directory when I initially listed the contents of the user's home directory.
 
@@ -49,7 +49,7 @@ cd .ssh
 nano authorized_keys
 ```
 
-![copy-and-paste-pub-key](../images/public-key.png "public-key")
+![copy-and-paste-pub-key](images/public-key.png "public-key")
 <br>
 
 5. Go to the machine with the ssh keys, copy the public key (.pub key) manually, and paste into the authorized_keys file you opened in `number 4` above.
@@ -62,7 +62,7 @@ Save the nano file by pressing `control o` and `enter` keys and exit the editor 
 
 7. Finally, connect to your remote server from your host machine with `ssh user@remoteserver`. Note how I am using the command on the host machine's terminal.
 
-![ssh-connection](../images/ssh-connection.png "ssh-connection")
+![ssh-connection](images/ssh-connection.png "ssh-connection")
 
 
 ## In conclusion
